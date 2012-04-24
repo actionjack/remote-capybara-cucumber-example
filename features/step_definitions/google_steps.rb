@@ -7,5 +7,5 @@ When /^I enter "([^"]*)"$/ do |term|
 end
 
 Then /^I should see results$/ do
-  page.should have_css('div#res li')
+  page.should have_content("results")
 end
